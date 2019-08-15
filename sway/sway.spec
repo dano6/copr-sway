@@ -1,11 +1,11 @@
 Name:           sway
-Version:        1.1.1
-Release:        1%{?dist}
+Version:        1.2
+Release:        1
 Summary:        i3-compatible window manager for Wayland
 Group:          User Interface/X
 License:        MIT
 URL:            https://github.com/swaywm/sway
-Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        %{url}/archive/%{name}/master.tar.gz
 
 BuildRequires:  asciidoc
 BuildRequires:  gcc-c++
@@ -47,7 +47,7 @@ Recommends:     grim
 Sway is a tiling window manager supporting Wayland compositor protocol and i3-compatible configuration.
 
 %prep
-%autosetup -n %{name}-%{version}%{?versrc_tail}
+%autosetup -n %{name}-master
 mkdir %{_target_platform}
 
 %build
