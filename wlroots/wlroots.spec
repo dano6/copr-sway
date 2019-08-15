@@ -91,10 +91,10 @@ or about 50,000 lines of code you were going to write anyway.
 
 
 %prep
-%autosetup -v -n %{name}-master%{version}/
+%autosetup -v -n %{name}-master/
 
 # Remove all .gitignore files
-#%{_bindir}/find %{_builddir}/%{name}-%{version} -name '.gitignore' -delete
+%{_bindir}/find %{_builddir}/%{name}-master -name '.gitignore' -delete
 
 %build
 %meson -Dwerror=false
