@@ -3,7 +3,7 @@
 
 Name:           wlroots
 Version:        0.6.0
-Release:        1%{?dist}
+Release:        2
 Summary:        A modular Wayland compositor library
 
 # All files in the sources are licensed as MIT, but
@@ -24,7 +24,7 @@ Summary:        A modular Wayland compositor library
 # underlying licenses.
 License:        MIT
 URL:            https://github.com/swaywm/%{name}
-Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        %{url}/archive/%{name}-master.tar.gz
 
 BuildRequires:  gcc
 BuildRequires:  git
@@ -91,10 +91,10 @@ or about 50,000 lines of code you were going to write anyway.
 
 
 %prep
-%autosetup -v -n %{name}-%{version}
+%autosetup -v -n %{name}-master%{version}/
 
 # Remove all .gitignore files
-%{_bindir}/find %{_builddir}/%{name}-%{version} -name '.gitignore' -delete
+#%{_bindir}/find %{_builddir}/%{name}-%{version} -name '.gitignore' -delete
 
 %build
 %meson -Dwerror=false
