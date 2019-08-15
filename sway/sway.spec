@@ -5,7 +5,7 @@ Summary:        i3-compatible window manager for Wayland
 Group:          User Interface/X
 License:        MIT
 URL:            https://github.com/swaywm/sway
-Source0:        %{url}/archive/%{name}/master.tar.gz
+Source0:        %{url}/archive/master.tar.gz
 
 BuildRequires:  asciidoc
 BuildRequires:  gcc-c++
