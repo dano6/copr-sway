@@ -2,8 +2,8 @@
 
 
 Name:           wlroots
-Version:        0.6.0
-Release:        5
+Version:        0.7.0
+Release:        6
 Summary:        A modular Wayland compositor library
 
 # All files in the sources are licensed as MIT, but
