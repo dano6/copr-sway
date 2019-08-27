@@ -1,6 +1,6 @@
 Name:           sway
 Version:        1.2
-Release:        5
+Release:        6
 Summary:        i3-compatible window manager for Wayland
 Group:          User Interface/X
 License:        MIT
